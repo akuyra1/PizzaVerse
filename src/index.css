@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* 
+* {
+  box-sizing: border-box;
+} */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +18,34 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.ripple-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.ripple {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: rgba(210, 150, 90, 0.3); /* Warm golden-brown, like a pizza crust */
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+  animation: ripple-effect 1s ease-out forwards;
+  box-shadow: 0 0 4px rgba(180, 80, 80, 0.2); /* Very soft red glow hint */
+}
+
+@keyframes ripple-effect {
+  100% {
+      transform: translate(-50%, -50%) scale(3);
+      opacity: 0;
+  }
 }

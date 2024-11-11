@@ -1,0 +1,33 @@
+.footerContainer {
+    background-color: rgb(52, 52, 52);
+    /* opacity: 10%; */
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    /* margin-top: 1000px; */
+
+}
+
+.footerUl {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: 3em;
+}
+
+.footerLi {
+    color: red;
+    gap: 3em;
+}
+
+.footerLi:hover {
+    color: green;
+}
+
+.footerTitles {
+    font-weight: bold;
+    padding-bottom: 1em;
+}

@@ -1,0 +1,71 @@
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    background: linear-gradient(to right, rgb(255, 183, 27), rgb(165, 10, 35));
+}
+
+.navListContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.navLi {
+    color: #fff;
+}
+
+.navLi:hover {
+    color: green;
+}
+
+.mainTitle {
+    color: #ffffff;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 5px 15px rgb(189, 81, 81);
+}
+
+.mainTitle {
+    color: #ffffff;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-shadow: 2px 5px 15px rgb(189, 81, 81);
+    cursor: default;
+}
+
+.mainTitleSpan {
+    color: #e51e1e;
+    text-shadow: 2px 5px 15px rgb(248, 0, 0);
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect with Shimmery Double Pulse */
+.mainTitleSpan:hover {
+    color: #ff5959;
+
+    animation: shimmerPulse 1.5s ease-in-out forwards;
+}
+
+/* Keyframes for Shimmery Double Pulse */
+@keyframes shimmerPulse {
+    0%, 100% {
+        text-shadow: 2px 5px 15px rgba(248, 0, 0, 0.8);
+    }
+    20% {
+        text-shadow: 0 0 25px rgba(255, 87, 87, 0.9), 0 0 35px rgba(255, 120, 120, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 40px rgba(255, 77, 77, 0.8), 0 0 50px rgba(248, 0, 0, 0.6);
+    }
+    70% {
+        text-shadow: 0 0 25px rgba(255, 87, 87, 0.9), 0 0 35px rgba(255, 120, 120, 0.5);
+    }
+    90% {
+        text-shadow: 0 0 30px rgba(255, 77, 77, 0.7), 0 0 40px rgba(248, 0, 0, 0.5);
+    }
+}
